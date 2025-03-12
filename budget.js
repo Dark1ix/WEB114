@@ -1,3 +1,4 @@
+/*Somtochukwu Onyenagubo - 3/11/25*/
 let income = 2500
 let rent = 1000
 let groceries = 300

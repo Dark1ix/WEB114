@@ -9,5 +9,5 @@ let remainingMoney = totalExpenses - income
 let RentP = Math.max((rent / income) * 100,0)
 let GroceriesP = Math.max((groceries / income) * 100,0)
 
-console.log(rentP)
-console.log(groceiresP)
+console.log(RentP)
+console.log(GroceriesP)

@@ -10,5 +10,7 @@ let remainingMoney = totalExpenses - income
 let RentP = Math.max((rent / income) * 100,0)
 let GroceriesP = Math.max((groceries / income) * 100,0)
 
+console.log( "The total income was: " +   income.toLocaleString("en-US", {style: "currency", currency: "USD", }));
+console.log( "The grocery total was: " +  groceries.toLocaleString("en-US", { style: "currency", currency:"USD" }));
 console.log(RentP)
 console.log(GroceriesP)

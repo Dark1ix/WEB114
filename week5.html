@@ -5,10 +5,18 @@
 <h1>For loops and while loops</h1>
 <script>
 /*Step 1*/
-for (let x = 0; x < 6; x++){
-    console.log('Loading slot...');
-}
+for (let x = 1; x < 6; x++){
 /*Step 2*/
+    if ( x <3) {
+        console.log('Loading slot '+ x + ' dispense Water');
+    } else if ( x ==3) {
+        console.log('Loading slot '+ x + ' dispense Cola');
+    } else if ( x ==4) {
+        console.log('Loading slot '+ x + ' dispense Super Drink');
+    } else {
+        console.log('Loading slot '+ x + ' dispense Orange Juice');
+    }
+}
 </script>
 </body>
 </html>

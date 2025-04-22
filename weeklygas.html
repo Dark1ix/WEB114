@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!--Somtochukwu Onyenagubo 04/22/2025-->
+<html>
+<body>
+<h2>What's the purpose of a function?</h2>
+<p>Functions allow us to reuse code without having to call it manually everytime. 
+    Prompt, confirm and alert are all examples of a function.</p><br>
+<script>
+/*Step 1*/
+let username = prompt("What's your name?");
+/*Step 3*/
+function calcGasAvg() {
+    let count = 0;
+    let total = 0;
+    let weeklyGas = 0;
+    /*Step 2*/
+    weeklyGas = parseFloat(
+        prompt(`What is your first weekly gas total? Enter -1 to end.`)
+        );
+    while (weeklyGas !== -1) {
+        total = total + weeklyGas
+        count++;
+        weeklyGas = parseFloat(
+        prompt(`What is your first weekly gas total? Enter -1 to end.`)
+        );
+    };
+    return total/count;
+}
+/*Step 4*/
+let gas = calcGasAvg();
+/*Step 5*/
+confirm(username + "'s average weekly gas bill is " + gas.toFixed(2));
+</script>
+</body>
+</html>

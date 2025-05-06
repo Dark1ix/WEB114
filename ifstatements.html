@@ -17,14 +17,18 @@ proceed = confirm(`Do we have permission to use your name?`);
 /*Step 3*/
 if (proceed == true) {
 /*Step 4*/
-    console.log(`Yes, I can use your name on this page, ${username}`);
+    console.log(`Yes, you can use my name on this page, ${username}`);
 } else{
 /*Step 5*/
     console.log("No, you can not use my name on this web page. Privacy Please.");
+}
 /*Step 6*/
 let age = prompt("What's your age?")
 /*Step 7*/
-alert(`Hi ${username}! You are ${age} years old.`)
+if (proceed == true) {
+    alert(`Hello ${username}! You are ${age} years old.`);
+} else {
+    alert(`Hello user! You are ${age} years old.`);
 }
 </script>
 </body>

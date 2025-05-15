@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--Somtochukwu Onyenagubo 05/14/2025-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Guessing Game</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <h1>Welcome to my JavaScript Guessing Game!</h1>
+
+    <h3>I have a secret number between 1 and 100</h3>
+    <h4>You have made <span id="guessesTaken">0</span> guesses and have <span id="guessesRemaining">10</span> remaining.</h4>
+
+    <form id="guessForm">
+        My Guess: <input type="number" name="myguess" id="myguess" required /><br/>
+        <p><input type="submit" value="Guess" /></p>
+    </form>
+
+    <form method="GET" action="final.html">
+        <input type="submit" value="New Game" />
+    </form>
+
+    <script src="final.js"></script>
+</body>
+</html>
